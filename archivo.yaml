@@ -1,0 +1,14 @@
+name: Ejemplo Hola Mundo
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  prueba:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ejecutar saludo
+        run: echo "hello World"
